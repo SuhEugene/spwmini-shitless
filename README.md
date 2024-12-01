@@ -1,6 +1,6 @@
 <div align="center">
 
-# SPWMini
+# SPWMini Shitless
 
 [![NPM Version](https://img.shields.io/npm/v/spwmini)](https://www.npmjs.com/package/spwmini) [![NPM
 downloads](https://img.shields.io/npm/dm/spwmini)](https://www.npmjs.com/package/spwmini)
@@ -28,22 +28,22 @@ SPWMini - Библиотека для создания мини приложен
 
 ## Установка
 
-Ты умеешь устанавливать пакеты своим любимым менеджером пакетов. Наш называется `spwmini`.
+Ты умеешь устанавливать пакеты своим любимым менеджером пакетов. Наш называется `spwmini-shitless`.
 
 ```bash
-npm install spwmini
+npm install spwmini-shitless
 
-yarn add spwmini
+yarn add spwmini-shitless
 
-pnpm install spwmini
+pnpm install spwmini-shitless
 ```
 
 ## Клиентская часть
 
-Пакет предоставляет импорт класса `SPWMini` из `spwmini/client`
+Пакет предоставляет импорт класса `SPWMini` из `spwmini-shitless/client`
 
 ```ts
-import SPWMini from 'spwmini/client';
+import SPWMini from 'spwmini-shitless/client';
 ```
 
 ### Инициализация
@@ -175,7 +175,7 @@ spm.on('openPaymentError', err => console.error(`Оплатить не удал�
 
 ## Серверная часть
 
-Из `spwmini/middleware` могут быть импортированы функции, помогающие с валидацией пользователя.
+Из `spwmini-shitless/middleware` могут быть импортированы функции, помогающие с валидацией пользователя.
 
 ### Действительно middleware
 
@@ -191,7 +191,7 @@ spm.on('openPaymentError', err => console.error(`Оплатить не удал�
 
 ```ts
 import express from 'express';
-import { validate } from 'spwmini/middleware';
+import { validate } from 'spwmini-shitless/middleware';
 
 const app = express();
 app.use('/validate', validate('SECRET_TOKEN'));
@@ -219,7 +219,7 @@ app.put('/validate', validate('SECRET_TOKEN'));
 
 ```ts
 import express from 'express';
-import { checkUser } from 'spwmini/middleware';
+import { checkUser } from 'spwmini-shitless/middleware';
 
 const app = express();
 app.use(express.json());
@@ -234,7 +234,7 @@ app.use('/validate-user', (req, res) => {
 
 ## Набор типов
 
-Все типы импортируются из `spwmini/types`.
+Все типы импортируются из `spwmini-shitless/types`.
 
 «Это немного, но это честная работа».
 

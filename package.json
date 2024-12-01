@@ -1,7 +1,7 @@
 {
-  "name": "spwmini",
+  "name": "spwmini-shitless",
   "version": "1.0.6",
-  "description": "SPWorlds Miniapp creation toolkit",
+  "description": "Shitless SPWorlds Miniapp creation toolkit",
   "types": "dist/index.d.ts",
   "exports": {
     "./client": {
@@ -26,10 +26,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sp-worlds/spwmini.git"
+    "url": "https://github.com/SuhEugene/spwmini-shitless.git"
   },
   "keywords": [
-    "SPWorlds",
     "SPWorlds",
     "API",
     "spworlds",
@@ -37,7 +36,11 @@
     "spwmini",
     "SPWMini",
     "SPWMiniapp",
-    "SP"
+    "SP",
+    "spw-mini shitless",
+    "spwmini shitless",
+    "SPWorlds shitless",
+    "shitless"
   ],
   "author": {
     "name": "SuhEugene",
@@ -45,7 +48,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sp-worlds/spwmini/issues"
+    "url": "https://github.com/SuhEugene/spwmini-shitless/issues"
   },
   "homepage": "https://spworlds.ru",
   "devDependencies": {
