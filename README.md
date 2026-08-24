@@ -2,8 +2,8 @@
 
 # SPWMini Shitless
 
-[![NPM Version](https://img.shields.io/npm/v/spwmini)](https://www.npmjs.com/package/spwmini) [![NPM
-downloads](https://img.shields.io/npm/dm/spwmini)](https://www.npmjs.com/package/spwmini)
+[![NPM Version](https://img.shields.io/npm/v/spwmini-shitless)](https://www.npmjs.com/package/spwmini-shitless) [![NPM
+downloads](https://img.shields.io/npm/dm/spwmini-shitless)](https://www.npmjs.com/package/spwmini-shitless)
 
 </div>
 
