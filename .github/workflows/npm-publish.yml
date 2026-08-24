@@ -5,24 +5,28 @@ name: Node.js Package
 
 on:
   workflow_dispatch: null
-  release:
-    types: [created]
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
 
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - uses: pnpm/action-setup@v2
+          package-manager-cache: false
+      - uses: pnpm/action-setup@v3
         name: Install pnpm
         with:
           version: 8
           run_install: true
       - run: pnpm build
       - run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
