@@ -36,6 +36,8 @@ npm install spwmini-shitless
 yarn add spwmini-shitless
 
 pnpm install spwmini-shitless
+
+bun add spwmini-shitless
 ```
 
 ## Клиентская часть
